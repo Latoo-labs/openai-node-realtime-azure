@@ -2277,6 +2277,10 @@ export declare namespace TranscriptionSessionUpdate {
  */
 export interface TranscriptionSessionCreatedEvent {
     /**
+     * The unique ID of the server event.
+     */
+    event_id: string;
+    /**
      * Realtime transcription session object configuration.
      */
     session: TranscriptionSessionUpdate.Session;
@@ -2284,10 +2288,6 @@ export interface TranscriptionSessionCreatedEvent {
      * The event type, must be `transcription_session.created`.
      */
     type: 'transcription_session.created';
-    /**
-     * Optional client-generated ID used to identify this event.
-     */
-    event_id?: string;
 }
 /**
  * Returned when a transcription session is updated with a
