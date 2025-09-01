@@ -3,7 +3,7 @@ node_modules
 yarn-error.log
 codegen.log
 Brewfile.lock.json
-dist
+# dist - commented out to include built files in git
 dist-deno
 /*.tgz
 .idea/
