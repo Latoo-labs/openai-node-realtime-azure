@@ -1,5 +1,5 @@
 {
-  "name": "openai",
+  "name": "openai-latoo",
   "version": "5.9.0",
   "description": "The official TypeScript library for the OpenAI API",
   "author": "OpenAI <support@openai.com>",
@@ -23,8 +23,8 @@
   },
   "dependencies": {},
   "imports": {
-    "openai": ".",
-    "openai/*": "./src/*"
+    "openai-latoo": ".",
+    "openai-latoo/*": "./src/*"
   },
   "bin": {
     "openai": "bin/cli"
