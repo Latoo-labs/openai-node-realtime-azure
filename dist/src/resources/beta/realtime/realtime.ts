@@ -1,14 +1,14 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
 import { APIResource } from '../../../core/resource';
-import * as RealtimeAPI from './realtime';
 import * as Shared from '../../shared';
+import * as RealtimeAPI from './realtime';
 import * as SessionsAPI from './sessions';
 import {
-  Session as SessionsAPISession,
   SessionCreateParams,
   SessionCreateResponse,
   Sessions,
+  Session as SessionsAPISession,
 } from './sessions';
 import * as TranscriptionSessionsAPI from './transcription-sessions';
 import {
@@ -2736,7 +2736,7 @@ export namespace TranscriptionSessionUpdate {
 }
 
 /**
- * Send this event to update a transcription session.
+ * Send this event to create a transcription session.
  */
 export interface TranscriptionSessionCreatedEvent {
   /**

@@ -1,8 +1,8 @@
 import { APIResource } from "../../../core/resource.mjs";
-import * as RealtimeAPI from "./realtime.mjs";
 import * as Shared from "../../shared.mjs";
+import * as RealtimeAPI from "./realtime.mjs";
 import * as SessionsAPI from "./sessions.mjs";
-import { Session as SessionsAPISession, SessionCreateParams, SessionCreateResponse, Sessions } from "./sessions.mjs";
+import { SessionCreateParams, SessionCreateResponse, Sessions, Session as SessionsAPISession } from "./sessions.mjs";
 import * as TranscriptionSessionsAPI from "./transcription-sessions.mjs";
 import { TranscriptionSession, TranscriptionSessionCreateParams, TranscriptionSessions } from "./transcription-sessions.mjs";
 export declare class Realtime extends APIResource {
@@ -2273,7 +2273,7 @@ export declare namespace TranscriptionSessionUpdate {
     }
 }
 /**
- * Send this event to update a transcription session.
+ * Send this event to create a transcription session.
  */
 export interface TranscriptionSessionCreatedEvent {
     /**

@@ -1,8 +1,8 @@
 import { APIResource } from "../../../core/resource.js";
-import * as RealtimeAPI from "./realtime.js";
 import * as Shared from "../../shared.js";
+import * as RealtimeAPI from "./realtime.js";
 import * as SessionsAPI from "./sessions.js";
-import { Session as SessionsAPISession, SessionCreateParams, SessionCreateResponse, Sessions } from "./sessions.js";
+import { SessionCreateParams, SessionCreateResponse, Sessions, Session as SessionsAPISession } from "./sessions.js";
 import * as TranscriptionSessionsAPI from "./transcription-sessions.js";
 import { TranscriptionSession, TranscriptionSessionCreateParams, TranscriptionSessions } from "./transcription-sessions.js";
 export declare class Realtime extends APIResource {
@@ -2273,7 +2273,7 @@ export declare namespace TranscriptionSessionUpdate {
     }
 }
 /**
- * Send this event to update a transcription session.
+ * Send this event to create a transcription session.
  */
 export interface TranscriptionSessionCreatedEvent {
     /**
