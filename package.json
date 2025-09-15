@@ -68,6 +68,35 @@
       "types": "./dist/*.d.ts",
       "import": "./dist/*.mjs",
       "require": "./dist/*.js"
+    },
+    "./resources/*": {
+      "types": "./dist/resources/*.d.ts",
+      "import": "./dist/resources/*.mjs",
+      "require": "./dist/resources/*.js"
+    },
+    "./beta/realtime/internal-base": {
+      "types": "./dist/beta/realtime/internal-base.d.ts",
+      "import": "./dist/beta/realtime/internal-base.mjs",
+      "require": "./dist/beta/realtime/internal-base.js"
+    },
+    "./beta/realtime/internal-base.js": {
+      "default": "./dist/beta/realtime/internal-base.js"
+    },
+    "./beta/realtime/ws": {
+      "types": "./dist/beta/realtime/ws.d.ts",
+      "import": "./dist/beta/realtime/ws.mjs",
+      "require": "./dist/beta/realtime/ws.js"
+    },
+    "./beta/realtime/ws.js": {
+      "default": "./dist/beta/realtime/ws.js"
+    },
+    "./resources/beta/realtime/realtime": {
+      "types": "./dist/resources/beta/realtime/realtime.d.ts",
+      "import": "./dist/resources/beta/realtime/realtime.mjs",
+      "require": "./dist/resources/beta/realtime/realtime.js"
+    },
+    "./resources/beta/realtime/realtime.js": {
+      "default": "./dist/resources/beta/realtime/realtime.js"
     }
   },
   "peerDependencies": {
