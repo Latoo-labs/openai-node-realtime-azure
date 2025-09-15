@@ -56,6 +56,7 @@ async function postprocess() {
         default: subpath + '/*.js',
       };
       newExports[subpath + '/*'] = {
+        types: subpath + '/*.d.ts',
         import: subpath + '/*.mjs',
         require: subpath + '/*.js',
       };

@@ -45,6 +45,7 @@
       "default": "./_vendor/*.js"
     },
     "./_vendor/*": {
+      "types": "./_vendor/*.d.ts",
       "import": "./_vendor/*.mjs",
       "require": "./_vendor/*.js"
     },
@@ -75,6 +76,7 @@
       "default": "./beta/*.js"
     },
     "./beta/*": {
+      "types": "./beta/*.d.ts",
       "import": "./beta/*.mjs",
       "require": "./beta/*.js"
     },
@@ -95,6 +97,7 @@
       "default": "./core/*.js"
     },
     "./core/*": {
+      "types": "./core/*.d.ts",
       "import": "./core/*.mjs",
       "require": "./core/*.js"
     },
@@ -115,6 +118,7 @@
       "default": "./helpers/*.js"
     },
     "./helpers/*": {
+      "types": "./helpers/*.d.ts",
       "import": "./helpers/*.mjs",
       "require": "./helpers/*.js"
     },
@@ -135,6 +139,7 @@
       "default": "./lib/*.js"
     },
     "./lib/*": {
+      "types": "./lib/*.d.ts",
       "import": "./lib/*.mjs",
       "require": "./lib/*.js"
     },
@@ -165,6 +170,7 @@
       "default": "./resources/*.js"
     },
     "./resources/*": {
+      "types": "./resources/*.d.ts",
       "import": "./resources/*.mjs",
       "require": "./resources/*.js"
     },
