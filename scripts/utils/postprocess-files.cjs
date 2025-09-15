@@ -76,6 +76,33 @@ async function postprocess() {
       };
     }
   }
+
+  // Add specific exports for the realtime modules
+  newExports['./beta/realtime/internal-base'] = {
+    types: './beta/realtime/internal-base.d.ts',
+    import: './beta/realtime/internal-base.mjs',
+    require: './beta/realtime/internal-base.js',
+  };
+  newExports['./beta/realtime/internal-base.js'] = {
+    default: './beta/realtime/internal-base.js',
+  };
+  newExports['./beta/realtime/ws'] = {
+    types: './beta/realtime/ws.d.ts',
+    import: './beta/realtime/ws.mjs',
+    require: './beta/realtime/ws.js',
+  };
+  newExports['./beta/realtime/ws.js'] = {
+    default: './beta/realtime/ws.js',
+  };
+  newExports['./resources/beta/realtime/realtime'] = {
+    types: './resources/beta/realtime/realtime.d.ts',
+    import: './resources/beta/realtime/realtime.mjs',
+    require: './resources/beta/realtime/realtime.js',
+  };
+  newExports['./resources/beta/realtime/realtime.js'] = {
+    default: './resources/beta/realtime/realtime.js',
+  };
+
   await fs.promises.writeFile(
     'dist/package.json',
     JSON.stringify(
