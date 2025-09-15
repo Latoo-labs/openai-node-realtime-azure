@@ -209,6 +209,22 @@
       "default": "./version.mjs"
     }
   },
+  "typesVersions": {
+    "*": {
+      "beta/*": [
+        "dist/beta/*"
+      ],
+      "resources/*": [
+        "dist/resources/*"
+      ],
+      "*.js": [
+        "dist/*.d.ts"
+      ],
+      "*": [
+        "dist/*"
+      ]
+    }
+  },
   "peerDependencies": {
     "ws": "^8.18.0",
     "zod": "^3.23.8"
