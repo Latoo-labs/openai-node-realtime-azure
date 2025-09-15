@@ -60,34 +60,14 @@
   },
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     },
-    "./*.mjs": {
-      "default": "./dist/*.mjs"
-    },
-    "./*.js": {
-      "default": "./dist/*.js"
-    },
     "./*": {
+      "types": "./dist/*.d.ts",
       "import": "./dist/*.mjs",
       "require": "./dist/*.js"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      "beta/*": [
-        "dist/beta/*"
-      ],
-      "resources/*": [
-        "dist/resources/*"
-      ],
-      "*.js": [
-        "dist/*.d.ts"
-      ],
-      "*": [
-        "dist/*"
-      ]
     }
   },
   "peerDependencies": {
