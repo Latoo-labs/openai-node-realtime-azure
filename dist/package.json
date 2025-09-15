@@ -248,6 +248,28 @@
       "default": "./resources/beta/realtime/realtime.d.ts"
     }
   },
+  "typesVersions": {
+    "*": {
+      "beta/realtime/internal-base": [
+        "./beta/realtime/internal-base"
+      ],
+      "beta/realtime/internal-base.js": [
+        "./beta/realtime/internal-base"
+      ],
+      "beta/realtime/ws": [
+        "./beta/realtime/ws"
+      ],
+      "beta/realtime/ws.js": [
+        "./beta/realtime/ws"
+      ],
+      "resources/beta/realtime/realtime": [
+        "./resources/beta/realtime/realtime"
+      ],
+      "resources/beta/realtime/realtime.js": [
+        "./resources/beta/realtime/realtime"
+      ]
+    }
+  },
   "peerDependencies": {
     "ws": "^8.18.0",
     "zod": "^3.23.8"

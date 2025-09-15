@@ -9,6 +9,18 @@ function processExportMap(m) {
 }
 processExportMap(pkgJson.exports);
 
+// Process typesVersions field
+if (pkgJson.typesVersions) {
+  for (const version in pkgJson.typesVersions) {
+    for (const key in pkgJson.typesVersions[version]) {
+      const paths = pkgJson.typesVersions[version][key];
+      if (Array.isArray(paths)) {
+        pkgJson.typesVersions[version][key] = paths.map((path) => path.replace(/^dist\//, './'));
+      }
+    }
+  }
+}
+
 for (const key of ['types', 'main', 'module']) {
   if (typeof pkgJson[key] === 'string') pkgJson[key] = pkgJson[key].replace(/^(\.\/)?dist\//, './');
 }
