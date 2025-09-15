@@ -237,6 +237,15 @@
     },
     "./resources/beta/realtime/realtime.js": {
       "default": "./resources/beta/realtime/realtime.js"
+    },
+    "./beta/realtime/internal-base.d.ts": {
+      "default": "./beta/realtime/internal-base.d.ts"
+    },
+    "./beta/realtime/ws.d.ts": {
+      "default": "./beta/realtime/ws.d.ts"
+    },
+    "./resources/beta/realtime/realtime.d.ts": {
+      "default": "./resources/beta/realtime/realtime.d.ts"
     }
   },
   "peerDependencies": {

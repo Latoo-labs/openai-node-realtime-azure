@@ -103,6 +103,17 @@ async function postprocess() {
     default: './resources/beta/realtime/realtime.js',
   };
 
+  // Add fallback exports for older module resolution
+  newExports['./beta/realtime/internal-base.d.ts'] = {
+    default: './beta/realtime/internal-base.d.ts',
+  };
+  newExports['./beta/realtime/ws.d.ts'] = {
+    default: './beta/realtime/ws.d.ts',
+  };
+  newExports['./resources/beta/realtime/realtime.d.ts'] = {
+    default: './resources/beta/realtime/realtime.d.ts',
+  };
+
   await fs.promises.writeFile(
     'dist/package.json',
     JSON.stringify(
